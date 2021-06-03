@@ -30,7 +30,7 @@ float wallis_pi(int n)
   { p= 1.0*(4*i*i)/(4*i*i - 1);;
     q=q*p;
   }
- res=q;
+ res=2*q;
  return res;
 }
   
