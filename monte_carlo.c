@@ -38,6 +38,20 @@ int main(void) {
     }
   }
 }
+float mc_pi(int num){
+    float p,q,d,res;
+    int count=0;
+    for(int i=0; i<=num; i++){
+        p =  frandom(); q= frandom();
+        d = pow((p*p + q*q),0.5);
 
+        if(d<=1){
+            count = count +1;
+        }
+
+    }
+    res=(4.0*count/num);
+    return res ;
+}
 
 
